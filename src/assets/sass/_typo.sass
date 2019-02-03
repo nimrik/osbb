@@ -1,0 +1,62 @@
+
+//=============================================
+                  TYPOGRAPHY
+//=============================================
+
+
+a, .o-link
+  outline: none
+  position: relative
+  text-decoration: none
+  color: inherit
+
+  &:hover::before,
+  &:focus::before
+    width: 100%
+
+a::before,
+.o-link::before
+  content: ''
+  z-index: -1
+  left: 0
+  bottom: -4px
+  width: 0
+  height: 2px
+  position: absolute
+
+  border-radius: 2em
+  background-color: currentColor
+
+  transition: width 330ms ease-in-out
+
+.fade-link
+  color: $c-accent
+
+h1
+
+h2, .h2-title
+
+h3, .h3-title
+
+h4, .h4-title
+
+h5, .h5-title
+
+h6, .h6-title
+
+span
+
+p
+
+
+li
+  list-style: none
+
+.accent
+  color: $c-primary
+
+
+.fade-link
+  transition: opacity .5s .15s ease-in
+
+
